@@ -1,4 +1,4 @@
-import { App } from "@/component/App";
+import { App } from "@/component/App/App";
 import { Shop } from "@/pages/Shop";
 import React, { Suspense } from "react"
 
@@ -7,12 +7,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 
 const routes = [
     {
-        path: "/shop",
+        path: "/",
         element: <App />,
         children: [
 
             {
-                path: "/shop/about",
+                path: "/shop",
                 element: <Suspense fallback={'loading...'} > <Shop /></Suspense >
             },
         ]

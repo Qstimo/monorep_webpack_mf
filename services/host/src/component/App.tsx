@@ -12,6 +12,7 @@ export const App = () => {
             <Link to='/shop'>shop</Link>
             <Outlet />
         </div>
+
     )
 }
 

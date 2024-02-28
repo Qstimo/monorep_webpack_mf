@@ -1,8 +1,11 @@
 {
   "name": "mono_rep",
   "version": "1.0.0",
-  "workspaces":[
+  "workspaces": [
     "packages/*",
     "services/*"
-]
+  ],
+  "dependencies": {
+    "formik": "^2.4.5"
+  }
 }
